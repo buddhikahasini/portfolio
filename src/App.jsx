@@ -98,14 +98,16 @@ export default function App() {
             <motion.div className="avatar-wrap" initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}>
               <div className="avatar-ring" />
               <div className="avatar">
-  <img
-    src="/profile.jpg"
-    alt="Hasini Buddhika Nawarathna"
-    width="360"
-    height="360"
-    decoding="async"
-    className="profile-photo"
-  />
+ 
+<img
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Hasini Buddhika Nawarathna"
+  width="360"
+  height="360"
+  decoding="async"
+  className="profile-photo"
+/>
+
 </div>
               <motion.div className="chip c1" animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 4 }}><Code2 size={16} /> Software Development</motion.div>
               <motion.div className="chip c3" animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 6 }}><Heart size={16} /> Teamwork</motion.div>
